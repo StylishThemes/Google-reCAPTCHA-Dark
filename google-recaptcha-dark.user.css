@@ -1,0 +1,160 @@
+/* ==UserStyle==
+@name        Google reCAPTCHA Dark
+@namespace   StylishThemes
+@version     1.0.0
+@description A global Google reCAPTCHA customizable dark theme, because even the most annoying things also burn retinas.
+@homepageURL https://github.com/StylishThemes/Google-reCAPTCHA-Dark
+@updateURL   https://stylishthemes.github.io/Google-reCAPTCHA-Dark/google-recaptcha-dark.user.css
+@supportURL  https://github.com/StylishThemes/Google-reCAPTCHA-Dark/issues/new/choose
+@author      StylishThemes and contributors
+@license     CC-BY-SA-4.0
+@preprocessor stylus
+@var color mnColor "Base color"         #4183c4
+@var color color-1 "Dark background"    #111
+@var color color-2 "Medium background"  #222
+@var color color-3 "Light background"   #333
+@var color color-4 "Input background"   #020202
+@var color color-5 "Border color"       #555
+@var color color-6 "Text bright"        #eee
+@var color color-7 "Text medium"        #ccc
+@var color color-8 "Text medium bright" #ddd
+@var color color-9 "Text darker"        #aaa
+@var color color-r "Red color"          #e33
+@var text  anima-h "Transition"         all 0.5s ease
+==/UserStyle== */
+body div[style*="border: 1px solid rgb(204"] {
+  border: 1px solid color-5 !important;
+}
+html .g-recaptcha-bubble-arrow[style*="border-color: transparent rgb(204"] {
+  border-color: transparent color-5 transparent transparent !important;
+}
+html .g-recaptcha-bubble-arrow[style*="border-color: transparent rgb(255"],
+html .g-recaptcha-bubble-arrow[style*="255) transparent transparent"] {
+  border-color: transparent color-2 transparent transparent !important;
+}
+@-moz-document regexp("^https?://(www\.)?google.com/recaptcha/api2/+.*") {
+  body, html {
+    background: color-2;
+    color: color-6;
+  }
+  .rc-anchor-light {
+    background: color-2;
+    color: color-6;
+    overflow: hidden;
+  }
+  .recaptcha-checkbox-border {
+    background-color: color-1;
+    border: 2px solid color-5;
+  }
+  .recaptcha-checkbox-hover .recaptcha-checkbox-border,
+  .recaptcha-checkbox-hover .recaptcha-checkbox-spinner-gif,
+  .recaptcha-checkbox-focus .recaptcha-checkbox-border,
+  .recaptcha-checkbox-focus .recaptcha-checkbox-spinner-gif,
+  .recaptcha-checkbox-focused .recaptcha-checkbox-border,
+  .recaptcha-checkbox-focused .recaptcha-checkbox-spinner-gif {
+    border: 2px solid mnColor;
+  }
+  .recaptcha-checkbox-active .recaptcha-checkbox-border,
+  .recaptcha-checkbox-active .recaptcha-checkbox-spinner-gif {
+    background-color: color-1;
+  }
+  .recaptcha-checkbox-disabled .recaptcha-checkbox-border,
+  .recaptcha-checkbox-disabled .recaptcha-checkbox-spinner-gif {
+    background-color: color-3;
+  }
+  .recaptcha-checkbox-clearOutline.recaptcha-checkbox-focused .recaptcha-checkbox-border,
+  .recaptcha-checkbox-clearOutline.recaptcha-checkbox-focused .recaptcha-checkbox-spinner-gif {
+    border: 2px solid color-9;
+  }
+  .recaptcha-checkbox-expired .recaptcha-checkbox-border,
+  .recaptcha-checkbox-expired .recaptcha-checkbox-spinner-gif {
+    border-color: color-r;
+  }
+  .rc-response-input-field, .rc-separator {
+    border: 1px solid color-5;
+  }
+  .rc-audiochallenge-response-field input {
+    background: color-4;
+    color: color-8;
+  }
+  #rc-imageselect {
+    background-color: color-2;
+    outline-color: color-5;
+  }
+  .rc-button-reload, .rc-button-audio, .rc-button-help,
+  .rc-audiochallenge-tdownload-link, .rc-button-image {
+    filter: invert(1) brightness(120%);
+    transition: anima-h;
+  }
+  .rc-controls .rc-challenge-help, .rc-audiochallenge-instructions,
+  .rc-doscaptcha-body-text, .rc-anchor-light .rc-anchor-logo-text,
+  .rc-anchor-light .rc-anchor-pt a:link,
+  .rc-anchor-light .rc-anchor-pt a:visited {
+    color: color-9;
+  }
+  .rc-anchor-light.rc-anchor-normal {
+    border-color: color-5;
+  }
+  .rc-audiochallenge-play-button .rc-button-default {
+    background: color-5;
+    color: color-6;
+    &:hover {
+      background: darken(color-5, 10%);
+      color: darken(color-6, 10%);
+    }
+  }
+  a[href*="recaptcha"], .rc-doscaptcha-body-text a {
+    color: mnColor;
+    transition: anima-h;
+    &:hover {
+      color: darken(mnColor, 10%);
+    }
+  }
+  .rc-button-default {
+    background: mnColor;
+    color: color-6;
+    transition: anima-h;
+    &:hover {
+      background: darken(mnColor, 10%);
+      color: darken(color-6, 10%);
+    }
+    &:focus {
+      box-shadow: 0 0 0 1pt mnColor;
+    }
+  }
+  .rc-button-default-disabled {
+    background: mnColor;
+    opacity: .5;
+  }
+  .rc-imageselect-desc-wrapper, .rc-doscaptcha-header {
+    background: mnColor;
+    color: color-6;
+  }
+  .rc-imageselect-checkbox {
+    filter: grayscale(1) brightness(110%);
+  }
+  .recaptcha-checkbox-spinner {
+    filter: grayscale(1) brightness(130%);
+    mix-blend-mode: exclusion;
+  }
+  .recaptcha-checkbox-borderAnimation {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: exclusion;
+  }
+  .rc-imageselect-incorrect-response, .rc-imageselect-error-dynamic-more,
+  .rc-imageselect-error-select-more, .rc-imageselect-error-select-something {
+    color: color-r;
+    background-color: color-2;
+  }
+  #rc-anchor-alert, .rc-anchor-alert, .recaptcha-error-message {
+    color: color-r;
+  }
+  .recaptcha-error {
+    border: 1px solid color-r;
+  }
+  .rc-anchor {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+}
