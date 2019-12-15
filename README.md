@@ -5,10 +5,10 @@
     <img src="https://img.shields.io/github/tag/StylishThemes/Google-reCAPTCHA-Dark.svg?label=tag" alt="Tag">
   </a>
   <a href="https://github.com/StylishThemes/Google-reCAPTCHA-Dark/stargazers">
-    <img src="https://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Google-reCAPTCHA-Dark&style=flat&background=007ec6" alt="Star">
+    <img src="https://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Google-reCAPTCHA-Dark&style=flat&background=007ec6" alt="stars">
   </a>
   <a href="https://github.com/StylishThemes/Google-reCAPTCHA-Dark/fork">
-    <img src="https://github-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Google-reCAPTCHA-Dark&style=flat&background=007ec6" alt="Fork">
+    <img src="https://github-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Google-reCAPTCHA-Dark&style=flat&background=007ec6" alt="forks">
   </a>
   <a href="https://david-dm.org/StylishThemes/Google-reCAPTCHA-Dark?type=dev">
     <img src="https://img.shields.io/david/dev/StylishThemes/Google-reCAPTCHA-Dark.svg?label=%20devDependencies%20" alt="devDependencies">
@@ -20,6 +20,7 @@
     <img src="https://img.shields.io/gitter/room/StylishThemes/Google-reCAPTCHA-Dark.js.svg?maxAge=2592000"  alt="Gitter">
   </a>
 </p>
+
 ## About
 
 This is a global fully customizable dark style for Google reCAPTCHA v2
