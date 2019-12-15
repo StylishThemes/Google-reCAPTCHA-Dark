@@ -20,6 +20,9 @@
     <img src="https://img.shields.io/gitter/room/StylishThemes/Google-reCAPTCHA-Dark.js.svg?maxAge=2592000"  alt="Gitter">
   </a>
 </p>
+## About
+
+This is a global fully customizable dark style for Google reCAPTCHA v2
 
 ## Installation
 
