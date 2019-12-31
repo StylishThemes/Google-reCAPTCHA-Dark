@@ -32,6 +32,12 @@ html .g-recaptcha-bubble-arrow[style*="border-color: transparent rgb(255"],
 html .g-recaptcha-bubble-arrow[style*="255) transparent transparent"] {
   border-color: transparent color-2 transparent transparent !important;
 }
+html .g-recaptcha-bubble-arrow[style*="border-color: transparent transparent transparent rgb(204"] {
+  border-color: transparent  transparent transparent color-5 !important;
+}
+html .g-recaptcha-bubble-arrow[style*="border-color: transparent transparent transparent rgb(255"] {
+  border-color: transparent  transparent transparent color-2 !important;
+}
 @-moz-document regexp("^https?://(www\.)?google.com/recaptcha/api2/+.*") {
   body, html {
     background: color-2;
