@@ -1,3 +1,5 @@
+**Retired:** no longer maintained.
+
 <h1 align="center">Google reCAPTCHA Dark</h1>
 <br>
 <p align="center">
